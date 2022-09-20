@@ -52,7 +52,7 @@ st.sidebar.write('*Note: Display compounds having values less than the following
 length_peptide = st.sidebar.slider(
         label="Peptide length",
         min_value=1,
-        max_value=4,
+        max_value=3,
         value=2,
         step=1,
 )
