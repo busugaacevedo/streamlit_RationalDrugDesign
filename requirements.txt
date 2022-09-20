@@ -1,0 +1,6 @@
+rdkit-pypi
+pandas
+streamlit
+sklearn
+python-igraph
+mols2grid
