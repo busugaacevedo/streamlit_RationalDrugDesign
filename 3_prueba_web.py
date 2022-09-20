@@ -21,7 +21,8 @@ st.markdown("""
 def download_dataset():
     """Loads once then cached for subsequent runs"""
     df = pd.read_csv(
-        "TABLA1.txt", sep="\t"
+        #"TABLA1.txt", sep="\t"
+        "https://raw.githubusercontent.com/busugaacevedo/streamlit_RationalDrugDesign/main/TABLA1.txt", sep="\t"
         #"https://raw.githubusercontent.com/busugaacevedo/stream_drugs/main/f_2.txt?token=GHSAT0AAAAAABY6XZ2LRFFXZKIA6JVOKSTEYZIX5FA", sep=","
         #"https://www.cureffi.org/wp-content/uploads/2013/10/drugs.txt", sep="\t"
     ).dropna()
