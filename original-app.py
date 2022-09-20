@@ -2,7 +2,7 @@
 Docker Container: https://hub.docker.com/r/continuumio/anaconda3
 RDKit Installation: https://www.rdkit.org/docs/Install.html
 """
-import mols2grid
+#import mols2grid
 import pandas as pd
 import streamlit as st
 import streamlit.components.v1 as components
@@ -44,5 +44,5 @@ df_result = df[df["mol_weight"] < weight_cutoff]
 st.write(df_result)
 
 
-raw_html = mols2grid.display(df_result, mapping={"smiles": "SMILES"})._repr_html_()
-components.html(raw_html, width=900, height=900, scrolling=True)
+#raw_html = mols2grid.display(df_result, mapping={"smiles": "SMILES"})._repr_html_()
+#components.html(raw_html, width=900, height=900, scrolling=True)
